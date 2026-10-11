@@ -2224,3 +2224,6 @@ input { cursor: text; }
 .wardrobe-feature { text-align: center; border: 1px solid #694898; border-radius: 24px; background: linear-gradient(135deg, #17112a, #0c101c); }
 .wardrobe-collection { color: #d2b7ff; line-height: 2; font-weight: 600; }
 #wardrobe { scroll-margin-top: 100px; }
+
+.music-demo video{display:block;width:100%;max-width:1100px;margin:24px auto;border:1px solid rgba(171,119,255,.45);border-radius:20px;background:#090a13;box-shadow:0 20px 70px rgba(93,41,180,.2)}
+.music-commands{text-align:center;line-height:2.2}.music-commands code{padding:7px 10px;background:rgba(126,72,203,.2);border-radius:8px}
