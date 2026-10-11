@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "version": "1.7.1",
+  "published_at": "2026-10-11T02:42:58.454667Z",
+  "installer": {
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.1/KatLauncher-Setup-1.7.1.exe",
+    "size": 68391496,
+    "sha256": "a697b2331409f4f4884eb4b896091487cad88042e8eb77e4fd405fa808fd4958"
+  },
+  "notes": {
+    "es": "🐾 Emotions Update: Wardrobe con presets, mascotas expresivas, AFK en Discord, KatEmote con buscador, KaBackup corregido y Reset conservando tus datos.",
+    "en": "🐾 Emotions Update: Wardrobe presets, expressive pets, Discord AFK status, KatEmote search, fixed KaBackup and Launcher Reset preserving your data."
+  }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kat Launcher 1.7.1: perfiles offline, KatCraft, Kat Social, trofeos, skins, mods, modpacks y cuatro interfaces." />
+  <title data-i18n="doc-title">Kat Launcher | Tu aventura empieza aquí</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico?v=2" sizes="any">
+  <link rel="icon" type="image/png" href="assets/kat-launcher-logo.png">
+</head>
+<body>
+  <div id="preloader" role="status" aria-live="polite" aria-label="Cargando" data-i18n-aria-label="a-loading">
+    <div class="loader-spin">
+      <div class="slice"></div><div class="slice"></div><div class="slice"></div>
+      <div class="slice"></div><div class="slice"></div><div class="slice"></div>
+    </div>
+    <div class="loader-pct" id="loaderPct">0%</div>
+  </div>
+
+  <div class="cursor-dot" id="cursorDot">
+    <svg viewBox="0 0 28 28" fill="none">
+      <path d="M5 3 L23 14 L14 16 L11 24 Z" fill="currentColor" stroke="rgba(0,0,0,.28)" stroke-width=".8" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="cursor-label" id="cursorLabel">Kat Launcher</div>
+
+  <div class="video-bg" aria-hidden="true">
+    <video id="bgVideo" muted loop playsinline preload="none"></video>
+    
+  </div>
+  <div class="video-tint" aria-hidden="true"></div>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="brand" href="#inicio" aria-label="Kat Launcher, inicio" data-i18n-aria-label="a-home">
+      <img src="assets/kat-launcher-logo.png" alt="Logo de Kat Launcher" data-i18n-alt="a-logo" />
+      <span>Kat Launcher</span>
+    </a>
+
+    <div class="navbar-actions">
+      <div class="auth-widget" id="authWidget" hidden></div>
+
+      <button class="lang-toggle-btn" id="langToggleBtn" aria-label="Cambiar idioma / Change language" data-i18n-aria-label="a-language">
+        <span class="lang-icon">🌐</span>
+        <span class="lang-text">EN / ES</span>
+      </button>
+
+      <button class="menu-button" aria-label="Abrir menú" data-i18n-aria-label="a-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#caracteristicas" data-i18n="nav-features">Características</a>
+      <a href="#comparativa" data-i18n="nav-compare">Comparativa</a>
+      <a href="#mods" data-i18n="nav-mods">Mods</a>
+      <a href="#personalizacion" data-i18n="nav-custom">Personalización</a>
+      <a href="https://discord.gg/HqFqWEC8tR" target="_blank" rel="noopener noreferrer" class="nav-discord" data-i18n="nav-discord">Discord</a>
+      <a href="#donar" class="nav-donate" data-i18n="donate-nav">☕ Donar</a>
+      <a href="#descargar" class="nav-download" data-i18n="nav-download">Descargar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> <span data-i18n="hero-eyebrow">Creado para jugadores de Minecraft</span></div>
+        <h1 data-i18n="hero-title">Tu Minecraft.<br><em>A tu manera.</em></h1>
+        <p data-i18n="hero-desc">
+          KatLauncher 1.7.1 reúne perfiles aislados, Kat Social, KatCraft,
+          trofeos, capturas, skins y mods en una experiencia completamente personalizable.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#descargar" data-i18n="hero-download">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
+            </svg>
+            Descargar para Windows
+          </a>
+          <a class="button secondary discord-hero-btn" href="https://discord.gg/HqFqWEC8tR" target="_blank" rel="noopener noreferrer" data-i18n="hero-discord">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="discord-svg">
+              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.03c-.21.375-.444.807-.608 1.2a18.336 18.336 0 0 0-5.487 0a13.14 13.14 0 0 0-.617-1.2a.077.077 0 0 0-.079-.03A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.077 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.873-.894a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.92 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.009c.12.099.244.19.372.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.894a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.156-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/>
+            </svg>
+            Unirse a la comunidad
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span><b>✓</b> <span data-i18n="hero-meta-free">Gratis</span></span>
+          <span><b>✓</b> <span data-i18n="hero-meta-fast">Rápido</span></span>
+          <span><b>✓</b> <span data-i18n="hero-meta-loaders">Fabric, Forge, NeoForge y Quilt</span></span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="logo-card">
+          <div class="logo-shine"></div>
+          <img src="assets/kat-launcher-logo.png" alt="Gato cósmico de Kat Launcher sosteniendo un bloque de césped" data-i18n-alt="a-cat" />
+        </div>
+        <div class="floating-badge badge-fabric">
+          <span class="dot fabric"></span>
+          Fabric
+        </div>
+        <div class="floating-badge badge-forge">
+          <span class="dot forge"></span>
+          Forge
+        </div>
+        <div class="floating-badge badge-neoforge">
+          <span class="dot neoforge"></span>
+          NeoForge
+        </div>
+        <div class="floating-badge badge-quilt">
+          <span class="dot quilt"></span>
+          Quilt
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Estadísticas de Kat Launcher" data-i18n-aria-label="a-stats">
+      <div><strong>4</strong><span data-i18n="stats-loaders">Modloaders</span></div>
+      <div><strong>∞</strong><span data-i18n="stats-profiles">Perfiles</span></div>
+      <div><strong>1 <span data-i18n="stats-click">clic</span></strong><span data-i18n="stats-play">Para jugar</span></div>
+      <div><strong>1.7.1</strong><span data-i18n="stats-version">Versión actual</span></div>
+      <div class="stat-tokens"><strong>🪙</strong><span data-i18n="stats-tokens">KatTokens · Próximamente</span></div>
+    </section>
+
+    <section class="section comparison-section" id="comparativa">
+      <div class="section-heading comparison-heading">
+        <span class="section-kicker" data-i18n="compare-kicker">Elige con los ojos abiertos</span>
+        <h2 data-i18n="compare-title">No somos otro botón para abrir Minecraft</h2>
+        <p data-i18n="compare-desc">KatLauncher convierte el launcher en una experiencia social, personalizable y conectada con el juego.</p>
+      </div>
+      <div class="comparison-shell">
+        <div class="comparison-scroll" tabindex="0">
+          <table class="comparison-table"><caption data-i18n="compare-caption">Comparativa · 7 de octubre de 2026</caption><thead><tr><th scope="col" data-i18n="compare-features">Funciones</th><th scope="col" class="kat-column"><img src="assets/kat-launcher-logo.png" alt="" width="32"><strong>KatLauncher</strong></th><th scope="col"><a href="https://tlauncher.org/en/news_26/modpack-system_5100.html" target="_blank" rel="noopener noreferrer">TLauncher</a></th><th scope="col"><a href="https://docs.skmedix.pl/" target="_blank" rel="noopener noreferrer">SKlauncher</a><small>4.0 beta</small></th><th scope="col"><a href="https://crystal-launcher.net/" target="_blank" rel="noopener noreferrer">Crystal Launcher</a></th><th scope="col"><a href="https://prismlauncher.org/" target="_blank" rel="noopener noreferrer">Prism Launcher</a></th><th scope="col"><a href="https://modrinth.com/app" target="_blank" rel="noopener noreferrer">Modrinth App</a></th><th scope="col"><a href="https://atlauncher.com/about" target="_blank" rel="noopener noreferrer">ATLauncher</a></th><th scope="col"><a href="https://www.curseforge.com/download/app" target="_blank" rel="noopener noreferrer">CurseForge</a></th></tr></thead><tbody><tr><th scope="row" data-i18n="compare-offline">Cuenta local sin login previo</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td></tr><tr><th scope="row" data-i18n="compare-instances">Instancias y perfiles separados</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status partial" data-i18n="compare-partial">Parcial</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td></tr><tr><th scope="row" data-i18n="compare-deps">Gestión e instalación de mods</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status partial" data-i18n="compare-partial">Parcial</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td></tr><tr><th scope="row" data-i18n="compare-packs">Instalación de modpacks</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td></tr><tr><th scope="row" data-i18n="compare-social">Chat global, amigos y mensajes privados</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td></tr><tr><th scope="row" data-i18n="compare-katcraft">KatCraft e invitaciones dentro del juego</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td></tr><tr><th scope="row" data-i18n="compare-pets">Mascotas KatPlus 3D y corona opcional</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td></tr><tr><th scope="row" data-i18n="compare-personality">Temas o personalización del launcher</th><td class="kat-column"><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status partial" data-i18n="compare-partial">Parcial</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status no" data-i18n="compare-unknown">Sin confirmar</span></td><td><span class="status yes" data-i18n="compare-yes">Sí</span></td></tr></tbody></table>
+        </div>
+        <p class="comparison-note" data-i18n="compare-note">Revisada el 7 de octubre de 2026 con fuentes oficiales enlazadas en cada launcher. “Parcial” indica soporte relacionado o limitado; “Sin confirmar” significa que las fuentes consultadas no acreditan la función, no que sea imposible. SKlauncher incluye su beta 4.0. KatPlus requiere KatCraft; Mobile continúa en alpha.</p>
+      </div>
+    </section>
+
+    <section class="section" id="caracteristicas">
+      <div class="section-heading">
+        <span class="section-kicker" data-i18n="feat-kicker">Más que un launcher</span>
+        <h2 data-i18n="feat-title">Todo lo que necesitas, sin el menú laberinto</h2>
+        <p data-i18n="feat-desc">Funciones potentes con una interfaz clara. Cero caos, puro bloque.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card large">
+          <div class="feature-icon">⚡</div>
+          <h3 data-i18n="feat-1-title">Perfiles completamente aislados</h3>
+          <p data-i18n="feat-1-desc">Cada perfil guarda su propia versión, loader, mods, mundos, RAM, resolución y argumentos JVM.</p>
+          <div class="mini-window">
+            <div class="window-top"><i></i><i></i><i></i></div>
+            <div class="profile-row active"><span class="cube grass"></span><b>Survival Quilt</b><small>1.21</small></div>
+            <div class="profile-row"><span class="cube purple"></span><b data-i18n="mock-pack">Modpack Cósmico</b><small>Fabric</small></div>
+            <div class="profile-row"><span class="cube orange"></span><b>Forge Adventure</b><small>Forge</small></div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🧩</div>
+          <h3 data-i18n="feat-2-title">Mods desde Modrinth</h3>
+          <p data-i18n="feat-2-desc">Busca e instala mods compatibles con la versión y el loader del perfil activo.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3 data-i18n="feat-3-title">Modpacks y archivos .mrpack</h3>
+          <p data-i18n="feat-3-desc">Instala packs de Modrinth o importa un archivo local como perfil independiente.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 data-i18n="feat-4-title">Skins locales</h3>
+          <p data-i18n="feat-4-desc">Guarda, previsualiza y activa skins PNG con instalación automática de CustomSkinLoader.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3 data-i18n="feat-5-title">Descarga y reparación</h3>
+          <p data-i18n="feat-5-desc">Comprueba assets, librerías y archivos de versión antes de iniciar y repara solo lo necesario.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🐾</div>
+          <h3 data-i18n="feat-6-title">Kat Social</h3>
+          <p data-i18n="feat-6-desc">Amigos, solicitudes, chat global, mensajes privados, publicaciones, perfiles y presencia en tiempo real.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3 data-i18n="feat-7-title">KatCraft y salas públicas</h3>
+          <p data-i18n="feat-7-desc">Crea o descubre salas, administra la consola y consulta amigos, perfiles, trofeos y presencia desde el juego.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 data-i18n="feat-8-title">Trofeos, capturas y personalidad</h3>
+          <p data-i18n="feat-8-desc">Rangos por tiempo jugado, galería de screenshots, sonidos, easter eggs y cuatro interfaces seleccionables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section loaders" id="mods">
+      <div class="loaders-copy">
+        <span class="section-kicker" data-i18n="mods-kicker">Compatibilidad real</span>
+        <h2 data-i18n="mods-title">Fabric, Forge, NeoForge y Quilt</h2>
+        <p data-i18n="mods-desc">
+          Cada perfil puede usar su propia versión de Minecraft y su propio
+          modloader. Kat Launcher mantiene las instancias separadas para que
+          los mods y configuraciones no se mezclen.
+        </p>
+        <ul>
+          <li data-i18n="mods-li-1"><span>✓</span> Instalación automática del loader</li>
+          <li data-i18n="mods-li-2"><span>✓</span> Mods filtrados por versión y loader en Modrinth</li>
+          <li data-i18n="mods-li-3"><span>✓</span> Perfiles independientes con RAM y resolución propias</li>
+          <li data-i18n="mods-li-4"><span>✓</span> Reparación de assets, librerías y archivos faltantes</li>
+        </ul>
+      </div>
+
+      <div class="loader-stack">
+        <div class="loader-card">
+          <div class="loader-logo fabric-logo">F</div>
+          <div><b>Fabric</b><span data-i18n="loader-fabric-desc">Ligero y rápido</span></div>
+          <small data-i18n="loader-compatible">Compatible</small>
+        </div>
+        <div class="loader-card featured">
+          <div class="loader-logo forge-logo">🔥</div>
+          <div><b>Forge</b><span data-i18n="loader-forge-desc">El clásico del modding</span></div>
+          <small data-i18n="loader-compatible">Compatible</small>
+        </div>
+        <div class="loader-card">
+          <div class="loader-logo neo-logo">N</div>
+          <div><b>NeoForge</b><span data-i18n="loader-neo-desc">Modding moderno</span></div>
+          <small data-i18n="loader-compatible">Compatible</small>
+        </div>
+        <div class="loader-card quilt-card">
+          <div class="loader-logo quilt-logo">Q</div>
+          <div><b>Quilt</b><span data-i18n="loader-quilt-desc">Flexible y comunitario</span></div>
+          <small data-i18n="loader-compatible">Compatible</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section customization" id="personalizacion">
+      <div class="custom-panel">
+        <div class="custom-preview">
+          <div class="fake-sidebar">
+            <img src="assets/kat-launcher-logo.png" alt="" />
+            <span class="active"></span><span></span><span></span><span></span>
+          </div>
+          <div class="fake-content">
+            <div class="fake-header"></div>
+            <div class="theme-cards">
+              <div class="theme theme-purple"></div>
+              <div class="theme theme-red"></div>
+              <div class="theme theme-blue"></div>
+            </div>
+            <div class="fake-lines"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+
+        <div class="custom-copy">
+          <span class="section-kicker" data-i18n="custom-kicker">Configuración integrada</span>
+          <h2 data-i18n="custom-title">Ajusta el launcher a tu instalación</h2>
+          <p data-i18n="custom-desc">
+            Elige entre XMBKat, Epic, Kat Modern y Kat Normal. Cambia el color
+            de acento, idioma, Java, memoria y resolución desde un solo lugar.
+          </p>
+          <a class="text-link" href="#descargar" data-i18n="custom-link">Ver características <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+<section class="pet-trailer-section wardrobe-feature" id="wardrobe" aria-labelledby="wardrobe-title">
+<div class="section-heading"><span class="section-kicker">1.7.1 · EMOTIONS UPDATE</span><h2 id="wardrobe-title" data-i18n="wardrobe-title">Wardrobe: tu skin, tu estilo.</h2><p data-i18n="wardrobe-desc">Prueba trajes, capas, coronas, alas, auras y mascotas sobre tu jugador real, sin guardar hasta que estés listo.</p></div>
+<p class="wardrobe-collection" data-i18n="wardrobe-collection">Trajes Kat y Wither · Capas reales · Gorros festivos · Alas animadas · Auras de mobs · Nuevas mascotas</p>
+<p data-i18n="wardrobe-note">Colección KatPlus · Requiere KatCraft · Las capas Mojang dependen de las que posea tu cuenta</p><a class='button primary' data-i18n='wardrobe-link' href='/changelog'>Explorar Wardrobe 1.7.1</a></section>
+    <section class="pet-trailer-section" id="mascotas" aria-labelledby="pet-trailer-title">
+      <div class="section-heading">
+        <span class="section-kicker">MASCOTAS · PETS</span>
+        <h2 id="pet-trailer-title" data-i18n="pets-title">Tus nuevos compañeros de aventura</h2>
+        <p data-i18n="pets-desc">Pollito, mini Wither y Among Us: una mascota 3D a tu lado, con combate opcional para defenderte y ayudarte cuando atacas.</p>
+      </div>
+      <div class="pet-trailer-footer">
+        <span data-i18n="pets-note">Una mascota a la vez · Sin ataques a jugadores</span>
+      </div>
+    </section>
+
+    <section class="donation-section" id="donar">
+      <div class="donation-card">
+        <div class="donation-icon">☕</div>
+        <div class="donation-copy">
+          <span class="section-kicker" data-i18n="donate-kicker">APOYA KATLAUNCHER</span>
+          <h2 data-i18n="donate-title">Ayúdanos a seguir construyendo KatLauncher</h2>
+          <p data-i18n="donate-desc">KatLauncher es gratis. Si te gusta el proyecto y quieres apoyar su desarrollo, puedes hacerlo directamente a través de Ko-fi.</p>
+          <div class="donation-points">
+            <span data-i18n="donate-dev">🐾 Desarrollo</span>
+            <span data-i18n="donate-features">🚀 Nuevas funciones</span>
+            <span data-i18n="donate-improvements">🛠️ Mejoras</span>
+          </div>
+        </div>
+        <a class="button primary donation-button"
+           href="https://ko-fi.com/katlauncher"
+           target="_blank"
+           rel="noopener noreferrer" data-i18n="donate-btn">
+          ☕ Apoyar en Ko-fi
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="download-section" id="descargar">
+      <div class="download-glow"></div>
+      <img src="assets/kat-launcher-logo.png" alt="" />
+      <span class="section-kicker" data-i18n="dl-kicker">La aventura está esperando</span>
+      <h2 data-i18n="dl-title">Descarga Kat Launcher</h2>
+      <p data-i18n="dl-desc">Instalador oficial para Windows 10 y Windows 11.</p>
+      
+      <div class="dl-actions">
+        <a class="button primary download-button" id="downloadButton"
+           href="https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.1/KatLauncher-Setup-1.7.1.exe"
+           download="KatLauncher-Setup-1.7.1.exe" data-i18n="dl-btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" />
+          </svg>
+          Descargar Kat Launcher
+        </a>
+        <a class="button secondary discord-dl-btn" href="https://discord.gg/HqFqWEC8tR" target="_blank" rel="noopener noreferrer" data-i18n="dl-discord">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="discord-svg">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.03c-.21.375-.444.807-.608 1.2a18.336 18.336 0 0 0-5.487 0a13.14 13.14 0 0 0-.617-1.2a.077.077 0 0 0-.079-.03A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.077 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.873-.894a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.92 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.009c.12.099.244.19.372.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.894a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" fill="currentColor"/>
+          </svg>
+          Unirse al Discord
+        </a>
+      </div>
+      <p><a class='button secondary' data-i18n='release-link' href='/changelog'>Novedades 1.7.1 / What's new</a></p>
+      <p><a class="button secondary" href="https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/mobile-v0.4.1/KatLauncher-Mobile-0.4.1.apk" download data-i18n="mobile-download">Descargar KatLauncher Mobile · 0.4.1</a></p>
+      <p data-i18n="mobile-desc">Android 5+ · Minecraft Java, cuentas locales, skins, catálogo Modrinth, modpacks, Wardrobe y KatSocial con Google.<br>Versión alpha: la compatibilidad y el rendimiento dependen del dispositivo.</p><p><a href="https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/mobile-v0.4.1/KatLauncher-Mobile-0.4.1-fuentes.zip" download data-i18n="mobile-source">Código fuente Mobile · LGPL-3.0</a></p>
+      <small data-i18n="dl-meta">Versión 1.7.1 · Software propietario de código cerrado</small>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#inicio">
+      <img src="assets/kat-launcher-logo.png" alt="" />
+      <span>Kat Launcher</span>
+    </a>
+    <p data-i18n="footer-desc">Launcher propietario para Minecraft: Java Edition ✦</p>
+    <span>© <span id="year"></span> Kat Launcher</span>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="assets/vendor/supabase.min.js"></script>
+  <script src="interactions.js"></script>
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
