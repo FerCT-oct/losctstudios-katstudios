@@ -4,9 +4,9 @@
   "version": "1.7.2",
   "published_at": "2026-10-11T19:45:57.640437+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2/KatLauncher-Setup-1.7.2.exe",
-    "size": 287566144,
-    "sha256": "6db0c406c03709946cec5a018cea752c8f2b4d0cc8795b853bb49378fb9b0f6b"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2/KatLauncher-Setup-1.7.2-Update.exe",
+    "size": 238695498,
+    "sha256": "ebe4ca52504a938345171c8a443c01a6fd7dca12a32b03899ca1fcb14ae3ec0a"
   },
   "notes": {
     "es": "🎵 Kat Music: YouTube con MP3 temporal, controles desde Minecraft, Kat elige, Easy Control, barra colapsable y una sorpresa de Kat.",
