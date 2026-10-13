@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.7.2",
-  "published_at": "2026-10-11T19:45:57.640437+00:00",
+  "version": "1.7.2.1",
+  "published_at": "2026-10-13T16:55:39.071839+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2/KatLauncher-Setup-1.7.2-Update.exe",
-    "size": 238695498,
-    "sha256": "ebe4ca52504a938345171c8a443c01a6fd7dca12a32b03899ca1fcb14ae3ec0a"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.1/KatLauncher-Setup-1.7.2.1.exe",
+    "size": 240409380,
+    "sha256": "5daa4f7c7e617cf9f3ca0f50b0ef212b793607e9814deb4f17722689be39efd2"
   },
   "notes": {
-    "es": "🎵 Kat Music: YouTube con MP3 temporal, controles desde Minecraft, Kat elige, Easy Control, barra colapsable y una sorpresa de Kat.",
-    "en": "🎵 Kat Music: temporary YouTube MP3s, Minecraft music commands, Kat picks songs, Easy Control, collapsible toolbar and a Kat surprise."
+    "es": "🛠️ Corregido Minecraft invisible con sonido en versiones antiguas. Verificado con 1.8 Vanilla y 1.12.2 Forge.",
+    "en": "🛠️ Fixed invisible Minecraft windows with audio on older versions. Verified with vanilla 1.8 and Forge 1.12.2."
   }
 }
