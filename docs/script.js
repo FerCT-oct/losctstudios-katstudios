@@ -220,6 +220,8 @@ Object.assign(translations.es, {"release-link": "🛠️ Novedades 1.7.2.1 · Pa
 Object.assign(translations.en, {"release-link": "🛠️ What’s new in 1.7.2.1 · Launch hotfix", "dl-meta": "Version 1.7.2.1 · Proprietary software"});
 Object.assign(translations.es, {"mobile-desc": "Android 5+ · Minecraft Java, skins, Modrinth, modpacks, Wardrobe, KatSocial y Easy Control.<br>🎵 Kat Music: YouTube desde Android 7 y audio local. Spotify abre su app oficial. Alpha; prueba en teléfono pendiente."});
 Object.assign(translations.en, {"mobile-desc": "Android 5+ · Minecraft Java, skins, Modrinth, modpacks, Wardrobe, KatSocial and Easy Control.<br>🎵 Kat Music: YouTube on Android 7+, plus local audio. Spotify opens its official app. Alpha; physical-device testing pending."});
+Object.assign(translations.es, {"release-link": "🐾 Novedades 1.7.2.2 · Bugfixes + Chunk", "dl-meta": "Versión 1.7.2.2 · Software propietario de código cerrado"});
+Object.assign(translations.en, {"release-link": "🐾 What’s new in 1.7.2.2 · Bugfixes + Chunk", "dl-meta": "Version 1.7.2.2 · Proprietary software"});
 function setLanguage(lang) {
   lang = lang === "en" ? "en" : "es";
   currentLanguage = lang;

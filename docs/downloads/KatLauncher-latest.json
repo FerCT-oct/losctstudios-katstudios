@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.7.2.1",
-  "published_at": "2026-10-13T16:55:39.071839+00:00",
+  "version": "1.7.2.2",
+  "published_at": "2026-10-19T06:04:10.839808+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.1/KatLauncher-Setup-1.7.2.1.exe",
-    "size": 240409380,
-    "sha256": "5daa4f7c7e617cf9f3ca0f50b0ef212b793607e9814deb4f17722689be39efd2"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.2/KatLauncher-Setup-1.7.2.2.exe",
+    "size": 240414121,
+    "sha256": "85f14dc2f955eba90d06b51235c4cb8ff7c4dbaff51c634b3cede6124073225d"
   },
   "notes": {
-    "es": "🛠️ Corregido Minecraft invisible con sonido en versiones antiguas. Verificado con 1.8 Vanilla y 1.12.2 Forge.",
-    "en": "🛠️ Fixed invisible Minecraft windows with audio on older versions. Verified with vanilla 1.8 and Forge 1.12.2."
+    "es": "🐛 Java automático y Forge 1.6.4 reparados. 🧱 Nueva pestaña Chunk para instalar, jugar y actualizar conservando tus datos.",
+    "en": "🐛 Fixed automatic Java selection and Forge 1.6.4. 🧱 New Chunk tab to install, play and update while preserving your data."
   }
 }
