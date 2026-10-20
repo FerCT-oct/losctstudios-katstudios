@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.7.2.2",
-  "published_at": "2026-10-19T06:04:10.839808+00:00",
+  "version": "1.7.2.3",
+  "published_at": "2026-10-20T23:50:54.622413+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.2/KatLauncher-Setup-1.7.2.2.exe",
-    "size": 240414121,
-    "sha256": "85f14dc2f955eba90d06b51235c4cb8ff7c4dbaff51c634b3cede6124073225d"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.3/KatLauncher-Setup-1.7.2.3.exe",
+    "size": 247130364,
+    "sha256": "0e5b2d2bc2503e6087d128eb8d81988c0a152aa9e3e9aa38b0b524c4792a6c9d"
   },
   "notes": {
-    "es": "🐛 Java automático y Forge 1.6.4 reparados. 🧱 Nueva pestaña Chunk para instalar, jugar y actualizar conservando tus datos.",
-    "en": "🐛 Fixed automatic Java selection and Forge 1.6.4. 🧱 New Chunk tab to install, play and update while preserving your data."
+    "es": "🏆 Respaldo de logros y guardados protegidos. ✨ Siete etapas de Kat, con Dios, bebé y Diablo basados en el logo original.",
+    "en": "🏆 Achievement backups and protected saves. ✨ Seven Kat stages, with God, baby and devil editions based on the original logo."
   }
 }
