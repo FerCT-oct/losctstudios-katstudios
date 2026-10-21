@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.7.2.3",
-  "published_at": "2026-10-20T23:50:54.622413+00:00",
+  "version": "1.8.0",
+  "published_at": "2026-10-21T16:55:14.613548+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.7.2.3/KatLauncher-Setup-1.7.2.3.exe",
-    "size": 247130364,
-    "sha256": "0e5b2d2bc2503e6087d128eb8d81988c0a152aa9e3e9aa38b0b524c4792a6c9d"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.8.0/KatLauncher-Setup-1.8.0.exe",
+    "size": 264257498,
+    "sha256": "b6987acc461b241879c534afa4cd5325817f741c2416c905fb3fdb7d9faa97b1"
   },
   "notes": {
-    "es": "🏆 Respaldo de logros y guardados protegidos. ✨ Siete etapas de Kat, con Dios, bebé y Diablo basados en el logo original.",
-    "en": "🏆 Achievement backups and protected saves. ✨ Seven Kat stages, with God, baby and devil editions based on the original logo."
+    "es": "Kat Companion, chat y KatDoctor con respaldo, Quick Friend y borrado del juego conservando tus datos.",
+    "en": "Kat Companion, chat and backed-up KatDoctor, Quick Friend, and game removal preserving personal data."
   }
 }
