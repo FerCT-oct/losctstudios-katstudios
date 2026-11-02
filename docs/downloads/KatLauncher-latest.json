@@ -4,9 +4,9 @@
   "version": "1.8.1",
   "published_at": "2026-11-02T14:22:15.328550+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.8.1/KatLauncher-Setup-1.8.1.exe",
-    "size": 462820491,
-    "sha256": "d9cba9f14542fe0aca6e77c59e9ce39234bd6a07e489a4d4209d69288d35b170"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.8.1/KatLauncher-Update-1.8.1.exe",
+    "size": 232474930,
+    "sha256": "2555d770cc702858174b8a77ee5ff4a772d9cd1a81e18c3b28fa845ea9097986"
   },
   "notes": {
     "es": "KatCraft Upgrades: amigos y jugadores con caras de skins, Panel Maestro ampliado, toasts y tonos incluido Wither, AFK, avisos de Windows, accesos directos por instancia e instalador Kat. Corregido el guardado del vestidor.",
