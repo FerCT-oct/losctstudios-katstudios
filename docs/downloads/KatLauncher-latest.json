@@ -1,15 +1,15 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.8.1",
-  "published_at": "2026-11-02T14:22:15.328550+00:00",
+  "version": "1.8.2",
+  "published_at": "2026-11-04T02:12:55.219143+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.8.1/KatLauncher-Update-1.8.1.exe",
-    "size": 232474930,
-    "sha256": "2555d770cc702858174b8a77ee5ff4a772d9cd1a81e18c3b28fa845ea9097986"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.8.2/KatLauncher-Update-1.8.2.exe",
+    "size": 239747641,
+    "sha256": "4d57ae2955c530cc0612e4b8fc0b9abac1523656bcab54767cc0115b7eac2cc3"
   },
   "notes": {
-    "es": "KatCraft Upgrades: amigos y jugadores con caras de skins, Panel Maestro ampliado, toasts y tonos incluido Wither, AFK, avisos de Windows, accesos directos por instancia e instalador Kat. Corregido el guardado del vestidor.",
-    "en": "KatCraft Upgrades: friends and world players with skin faces, expanded Master Panel, notification tones including Wither, AFK, Windows notifications, instance shortcuts and Kat installer. Fixed wardrobe saves."
+    "es": "Ely.by con skin, Rich Presence con instancia y botones, cierre y scroll KatSocial corregidos, perfiles KatCraft y reconexión. Compatibilidad actual conservada; ampliación desde 1.15 reservada para otra actualización. Microsoft premium pendiente.",
+    "en": "Ely.by skins, instance and buttons in Rich Presence, fixed closing and KatSocial scrolling, KatCraft profiles and reconnect. Current compatibility retained; the 1.15+ expansion is reserved for a later update. Microsoft premium pending."
   }
 }
