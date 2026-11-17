@@ -34,12 +34,13 @@
     "kc-title": "Rooms, emotes and friends in game", "kc-lead": "KatLauncher's own mod for Fabric and Forge. Open your world as a room, get friend notices and use emotes without leaving Minecraft.",
     "dl-eyebrow": "Download", "dl-title": "Start playing",
     "dl-win": "Windows installer", "dl-win-d": "Windows 10 and 11 (64-bit). Install over the previous version: your profiles and worlds are kept.", "dl-win-btn": "Download installer", "dl-all": "All versions",
+    "dl-linux": "Linux package", "dl-linux-d": "Ubuntu 22.04+ and Debian 12+ (64-bit). Extract it and run \"sh install.sh\"; no sudo needed and it updates itself.", "dl-linux-btn": "Download .tar.gz", "dl-linux-notes": "Release notes and SHA-256",
     "dl-store": "From the Store", "dl-store-d": "Installation and automatic updates handled by Microsoft Store.", "dl-store-btn": "Open in the Store",
     "dl-mobile-d": "Android 5 or newer. Minecraft Java, skins, modpacks, Kat Social and Easy Control. Alpha version.", "dl-mobile-btn": "Download APK", "dl-mobile-src": "Source code · GPL-3.0",
     "dl-note": "To play on premium servers you need a copy of Minecraft. Offline profiles work without a Microsoft or Google account.",
     "sup-eyebrow": "Support the project", "sup-title": "KatLauncher is free", "sup-lead": "If you like it and want it to keep growing, you can support development on Ko-fi or join the community on Discord.",
     "sup-kofi": "Support on Ko-fi", "sup-discord": "Join the Discord",
-    "ft-changelog": "Changelog", "ft-legal": "© Los CT Studios · KatLauncher is not an official Minecraft product and is not affiliated with Mojang or Microsoft.",
+    "ft-tux": "Tux: Larry Ewing (lewing@isc.tamu.edu) with The GIMP.", "ft-changelog": "Changelog", "ft-legal": "© Los CT Studios · KatLauncher is not an official Minecraft product and is not affiliated with Mojang or Microsoft.",
   };
   // El español es el texto del HTML: se guarda al cargar para poder volver a él.
   const ES = {};

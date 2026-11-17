@@ -11,5 +11,11 @@
   "notes": {
     "es": "Kat Cosmic: interfaz nueva en las 16 pestañas, Amigos en tiempo real, perfiles con logo y banner, configuración inicial y ventanas dentro del launcher. XMBKat, Epic y Classic siguen disponibles.",
     "en": "Kat Cosmic: new interface across all 16 tabs, real-time Friends, profiles with logo and banner, first-run setup and windows inside the launcher. XMBKat, Epic and Classic remain available."
+  },
+  "linux": {
+    "version": "1.9.0",
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.9.0/KatLauncher-1.9.0-linux-x86_64.tar.gz",
+    "size": 346346474,
+    "sha256": "99bc1d6579ad05f83ecf3fb10a4728734f6033772d09f3ef486b76691c373671"
   }
 }
