@@ -11,7 +11,7 @@
       eyebrow: "Windows · 1.9.0", href: REL + "/download/v1.9.0/KatLauncher-Setup-1.9.0.exe",
       es: { title: "Instalador para Windows", desc: "Windows 10 y 11 (64 bits). Instala sobre la versión anterior: tus perfiles y mundos se conservan.", btn: "Descargar instalador" },
       en: { title: "Windows installer", desc: "Windows 10 and 11 (64-bit). Install over the previous version: your profiles and worlds are kept.", btn: "Download installer" },
-      extra: [["Microsoft Store", "https://apps.microsoft.com/detail/9PC3M6KB2LHJ"], [{ es: "Todas las versiones", en: "All versions" }, REL]],
+      extra: [["Microsoft Store", "https://apps.microsoft.com/detail/9PC3M6KB2LHJ"], [{ es: "KatLite (ligero)", en: "KatLite (lightweight)" }, "#katlite"], [{ es: "Todas las versiones", en: "All versions" }, REL]],
     },
     linux: {
       eyebrow: "Linux · 1.9.0", href: REL + "/download/v1.9.0/KatLauncher-1.9.0-linux-x86_64.tar.gz",

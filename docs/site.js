@@ -37,6 +37,7 @@
     "dl-linux": "Linux package", "dl-linux-d": "Ubuntu 22.04+ and Debian 12+ (64-bit). Extract it and run \"sh install.sh\"; no sudo needed and it updates itself.", "dl-linux-btn": "Download .tar.gz", "dl-linux-notes": "Release notes and SHA-256",
     "dl-store": "From the Store", "dl-store-d": "Installation and automatic updates handled by Microsoft Store.", "dl-store-btn": "Open in the Store",
     "dl-mobile-d": "Android 5 or newer. Minecraft Java, skins, modpacks, Kat Social and Easy Control. Alpha version.", "dl-mobile-btn": "Download APK", "dl-mobile-src": "Source code · GPL-3.0",
+    "dl-lite-t": "KatLite: the lightweight version", "dl-lite-d": "For modest PCs: Play, Instances, Mods, Modpacks, Skins and Friends, without KatCraft, Rooms, music or the built-in browser. Uses about 70 MB of RAM. Portable: extract the .zip and open KatLite.exe.", "dl-lite-btn": "Download KatLite (76 MB)", "dl-lite-notes": "Release notes and SHA-256",
     "dl-note": "To play on premium servers you need a copy of Minecraft. Offline profiles work without a Microsoft or Google account.",
     "sup-eyebrow": "Support the project", "sup-title": "KatLauncher is free", "sup-lead": "If you like it and want it to keep growing, you can support development on Ko-fi or join the community on Discord.",
     "sup-kofi": "Support on Ko-fi", "sup-discord": "Join the Discord",
