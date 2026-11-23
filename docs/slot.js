@@ -8,16 +8,16 @@
   const LOOPS = 9;                                         // vueltas dibujadas por rodillo
   const DATA = {
     windows: {
-      eyebrow: "Windows · 1.9.0", href: REL + "/download/v1.9.0/KatLauncher-Setup-1.9.0.exe",
+      eyebrow: "Windows · 1.9.1", href: REL + "/download/v1.9.1/KatLauncher-Setup-1.9.1.exe",
       es: { title: "Instalador para Windows", desc: "Windows 10 y 11 (64 bits). Instala sobre la versión anterior: tus perfiles y mundos se conservan.", btn: "Descargar instalador" },
       en: { title: "Windows installer", desc: "Windows 10 and 11 (64-bit). Install over the previous version: your profiles and worlds are kept.", btn: "Download installer" },
       extra: [["Microsoft Store", "https://apps.microsoft.com/detail/9PC3M6KB2LHJ"], [{ es: "KatLite (ligero)", en: "KatLite (lightweight)" }, "#katlite"], [{ es: "Todas las versiones", en: "All versions" }, REL]],
     },
     linux: {
-      eyebrow: "Linux · 1.9.0", href: REL + "/download/v1.9.0/KatLauncher-1.9.0-linux-x86_64.tar.gz",
+      eyebrow: "Linux · 1.9.1", href: REL + "/download/v1.9.1/KatLauncher-1.9.1-linux-x86_64.tar.gz",
       es: { title: "Paquete para Linux", desc: "Ubuntu 22.04+ y Debian 12+ (64 bits). Descomprime y ejecuta «sh install.sh»: no necesita sudo y se actualiza solo.", btn: "Descargar .tar.gz" },
       en: { title: "Linux package", desc: "Ubuntu 22.04+ and Debian 12+ (64-bit). Extract it and run “sh install.sh”: no sudo needed and it updates itself.", btn: "Download .tar.gz" },
-      extra: [[{ es: "Novedades y SHA-256", en: "Release notes and SHA-256" }, REL + "/tag/v1.9.0"], [{ es: "Todas las versiones", en: "All versions" }, REL]],
+      extra: [[{ es: "Novedades y SHA-256", en: "Release notes and SHA-256" }, REL + "/tag/v1.9.1"], [{ es: "Todas las versiones", en: "All versions" }, REL]],
     },
     mac: {
       eyebrow: "macOS", sad: true,
