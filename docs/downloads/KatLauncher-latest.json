@@ -1,21 +1,21 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.9.1",
-  "published_at": "2026-11-23T04:08:51+00:00",
+  "version": "1.9.1.1",
+  "published_at": "2026-11-23T16:15:54+00:00",
   "installer": {
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.9.1/KatLauncher-Update-1.9.1.exe",
-    "size": 241058765,
-    "sha256": "aa7d8f05559305557ce44a5e1a12dd8bf3ae3958feb7285b8781ea9fde8ec5f1"
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.9.1.1/KatLauncher-Update-1.9.1.1.exe",
+    "size": 241068675,
+    "sha256": "715479c3fb8acc68b919759bb7625ff07ff4f9e33c0d2339e836dfd6cfd07da2"
   },
   "notes": {
-    "es": "Llamadas de voz en Kat Social, Salas nuevas con amigos en 3D, KatMods, publicaciones con fotos, me gusta y comentarios, fotos HD en KatCraft, biblioteca de skins con filtro de contenido sensible y un launcher más rápido.",
-    "en": "Kat Social voice calls, new Rooms with 3D friends, KatMods, posts with photos, likes and comments, HD photos in KatCraft, a skin library with a sensitive-content filter and a faster launcher."
+    "es": "Arreglos: publicaciones (publicar, fotos, me gusta y comentarios), Kat Social más rápido, la biblioteca de skins vuelve a cargar y Capturas ya no congela el launcher.",
+    "en": "Fixes: posts (publishing, photos, likes and comments), faster Kat Social, the skin library loads again and Screenshots no longer freezes the launcher."
   },
   "linux": {
-    "version": "1.9.1",
-    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.9.1/KatLauncher-1.9.1-linux-x86_64.tar.gz",
-    "size": 376673070,
-    "sha256": "c434749dd88fbe2e5a2075d73c3693a869d62b1650bf125b25731e9144261700"
+    "version": "1.9.1.1",
+    "url": "https://github.com/FerCT-oct/losctstudios-katstudios/releases/download/v1.9.1.1/KatLauncher-1.9.1.1-linux-x86_64.tar.gz",
+    "size": 376685317,
+    "sha256": "1611307c69dad90c8df41964228a432c5cb1529134f1b7d17d605cb4f955966b"
   }
 }
